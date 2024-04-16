@@ -1,0 +1,70 @@
+{
+  "name": "@react-native-base/core",
+  "version": "0.0.1",
+  "description": "Showcase a Fabric Native Component with a centered text",
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/index.d.ts",
+  "scripts": {
+    "prepare": "bob build"
+  },
+  "files": [
+    "src",
+    "lib",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__",
+    "android",
+    "ios",
+    "RNBaseCore.podspec",
+    "!android/build",
+    "!ios/build"
+  ],
+  "keywords": [
+    "react-native",
+    "ios",
+    "android"
+  ],
+  "repository": "https://github.com/ayand269/react-native-base",
+  "author": "Ayan ayand269@gmail.com (https://github.com/ayand269)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ayand269/react-native-base/issues"
+  },
+  "homepage": "https://github.com/ayand269/react-native-base#readme",
+  "devDependencies": {
+    "react-native-builder-bob": "^0.23.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-native": "0.73.6"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "codegenConfig": {
+    "name": "RNBaseCoreSpecs",
+    "type": "components",
+    "jsSrcsDir": "src",
+    "android": {
+      "javaPackageName": "com.rnbasecore"
+    }
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ]
+}

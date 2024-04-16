@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "esModuleInterop": true,
+      "jsx": "react-native",
+      "lib": ["esnext", "dom"],
+      "module": "esnext",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "skipLibCheck": true,
+      "strict": true,
+      "target": "esnext",
+      "declaration": true,
+      "declarationMap": false,
+      "outDir": "lib/typescript",
+      "noStrictGenericChecks": false,
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitUseStrict": false,
+      "noUnusedParameters": true,
+      "noUnusedLocals": true,
+  
+    //   "moduleSuffixes": [".native", ""]
+    },
+    "include": ["src/*.ts", "src/*.tsx"]
+  }
